@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <!-- tailwindcss and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                btnColor: '#25252533',
+                btnColor2: '#FF1F3D;',
+                textColor: '#171717B3',
+                titleColor: '#171717',
+                btnText: '#636363',
+              }
+            }
+          }
+        }
+      </script>
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .inter-font{
+            font-family: 'Inter', sans-serif;
+        }
+        
+    </style>
+
+
+</head>
+<body class="inter-font">
+    <!-- header Section -->
+    <header class="w-11/12 mx-auto border-b-2 border-btnColor ">
+        <!-- nav bar section -->
+        <nav >
+          <div onclick="homeBtn()" class="flex md:justify-between justify-center items-center py-10 gap-5">
+              <div>
+                  <a href="index.html" target="" rel="noopener noreferrer">
+                  <img src="../img/Logo.png" alt="Logo">
+                  </a>
+              </div>
+              <div>
+              </div>
+              <div>
+                  <a href="blog.html" target="" rel="noopener noreferrer">
+                      <button onclick="blogBtn()" class=" bg-btnColor2 py-2 px-5 rounded-lg text-white font-medium text-lg">Blog</button>
+                  </a>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+    <main class="w-11/12 mx-auto pt-6">
+<section>
+<div class="pb-3 text-2xl font-bold">
+1.  Discuss the scope of var, let, and const.
+</div>
+
+  <div>
+      <p> In JavaScript, 'var' , 'let', and 'const' are three ways to declare variables. </p>
+      <br> 
+      <div>
+        <p class="font-semibold">A.**var**</p> 
+          <p>
+          In JavaScript, a variable declared with var is function scoped or globally scoped if not within a function.
+          </p>
+
+        </div><br>
+        
+        <div>
+          <p class="font-semibold">B. **let**:</p> 
+            <p>
+            the 'let' keyword in JavaScript defines a block scoped local variable.
+          </p>
+      </div><br>
+      
+
+      <div>
+        <p class="font-semibold">C. **const**:</p> 
+          <p>
+            In programming, 'const' defines and entity that cannot be modified after its initial assignment.
+          </p>
+      </div> <br>
+    </div>
+    <div class="w-full mx-auto p-5 lg:px-44">
+      <img class="mx-auto w-full " src="../img/var-let-const.png" alt="">
+    </div>
+</section>
+
+<section>
+  <div class="pb-3 text-2xl font-bold">
+  2.  Tell us the use cases of <span class="bg-btnColor px-3 rounded-lg">null</span>  and <span class="bg-btnColor px-3 rounded-lg">undefined</span>
+  </div>
+  
+    <div>
+        <p> the following is about 'null' and 'undefined' in JavaScript</p>
+        <br> 
+        <div>
+          <p class="font-semibold">A.**undefined**</p> 
+            <p> it represents a variable that has been declare but hasn't been assigned any value yet. </p>
+          </div><br>
+          
+          <div>
+            <p class="font-semibold">B. **null**:</p> 
+              <p> It represents a deliberate absence  of any value or object </p>
+        </div><br>
+      </div>
+      <div class="w-full mx-auto p-5 lg:px-44">
+        <img class="mx-auto w-full " src="../img/null and undefined.jpg" alt="">
+      </div>
+  </section>
+<section class="pb-10">
+  <div class="pb-3 text-2xl font-bold">
+  3. What do you mean by REST API?
+  </div>
+  
+    <div>
+      An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style.
+        </div><br>
+      </div>
+      <div class="w-full mx-auto p-5 lg:px-44">
+        <img class="mx-auto w-full " src="../img/rest_api.svg" alt="">
+      </div>
+  </section>
+
+  
+    </main>
+    <footer></footer>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
